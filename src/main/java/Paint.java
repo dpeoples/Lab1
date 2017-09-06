@@ -41,10 +41,15 @@ public class Paint {
                  * Grab random numbers between -25 and 25 and use them to generate a white square at
                  * a position nearby the mouse click.
                  */
-                double x2 = x - 25 + 50 * Math.random();
-                double y2 = y - 25 + 50 * Math.random();
+                double angle = Math.random() * 6.28;
+                double length = Math.random() * 30;
 
-                Zen.fillRect((int) x2, (int) y2, 1, 1);
+                double x2 = x + length * Math.cos(angle);
+                double y2 = y + length * Math.sin(angle);
+
+                Zen.setColor((int) (220 - x / 2), (int) (220 - y / 2),
+                        (int) (220 - x / 2 + y / 2));
+                Zen.fillRect((int) x2 - 4, (int) y2 - 4, 8, 8);
             }
         }
     }

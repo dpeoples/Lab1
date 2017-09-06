@@ -32,7 +32,7 @@ public class OnceUponAWhile {
          *
          * @see https://en.wikipedia.org/wiki/RGB_color_model
          */
-        Zen.setColor(255, 0, 0);
+        Zen.setColor(0, 150, 100);
         Zen.drawText("Upon", 0, 200);
 
         /*

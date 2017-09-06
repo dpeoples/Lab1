@@ -64,7 +64,7 @@ public class NearlyAllMethods {
             Zen.drawText(userInputText, 100, 100);
 
             /*
-             * Draw a rectangle that fallows the mouse.
+             * Draw a rectangle that follows the mouse.
              */
             Zen.fillRect(Zen.getMouseX() - 16, Zen.getMouseY() - 16, 32, 32);
 

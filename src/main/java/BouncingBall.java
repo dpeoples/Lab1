@@ -31,7 +31,7 @@ public class BouncingBall {
             /*
              * Compute new velocity. Flip as needed.
              */
-            velocityY = velocityY + 1;
+            velocityY = velocityY + 0.2;
             if (y + velocityY > 400) {
                 velocityY = -1 * Math.abs(0.9 * velocityY);
             }
